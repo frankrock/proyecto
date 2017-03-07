@@ -1,0 +1,109 @@
+body{
+    background:url('fondo.jpg');
+    color:azure;
+    text-align: center;
+    min-height:100%;
+    position:relative;
+
+}
+#btn1,#btn2,#btn3{
+    margin-top: 20;
+    height: 50px;
+    width: 430px;
+    border-image: url("bgcolor.jpg");
+    background-image: url("bgcolor.jpg");
+    cursor: pointer;
+
+}
+
+
+.z1,#e1{
+    height: 50px;
+    width: 250px;
+    background-color:  teal;
+    border-color:  teal;
+}
+
+.z2{
+    height: 30px;
+    width: 100px;
+    background-color:  teal;
+    border-color:  teal;
+}
+
+#d{
+    font-size: 30;
+}
+#pfs{
+      font-size: 30;
+    margin-right: 20;
+    margin-top: 50;
+    height: 50px;
+    width: 250px;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+#contenido2{
+    float: left;
+}
+
+#visualizarTabla{
+ float: right;
+ width: 1000px;
+ position:absolute;
+ top: 360px;
+ left: 800px;
+}
+.mostrarTabla{
+    float: right;
+    position:absolute;
+    top: 360px;
+    left: 650px;
+    margin-right:auto;
+    text-align:center;
+    display: none;
+    background-color: #929292;
+}
+
+#CancelarEleccion{
+    margin-right:auto;
+}
+
+
+#tabla,#tablaNotas{
+     background-color: #055570;
+     border: 2px solid #07333f;
+    color:#ffffff;
+}
+
+
+th{
+    background-color:teal;
+    color:#ffffff;
+}
+
+table, th, td {
+   border: 1px solid red;
+}
+.form-group{ 
+ background-color: #055570;
+ border: 2px solid #07333f;
+ width: 600px;}
+
+button{
+    background-color: transparent;
+}
+#formularioE,#formularioM,#formularioN{
+    float: left;
+  padding: .5em;
+}
+
+#texto,#textoN{
+    color:crimson; 
+    font-size:23px;
+    font-weight:bold;
+}

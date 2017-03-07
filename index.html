@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset='utf-8'>
+        <title>PROYECTO WEB</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="JS/jq.js"></script>
+        <script src="JS/validacion.js"></script>
+        <script src="JS/obtenerDatos.js"></script>
+        <script src="JS/index.js"></script>
+
+    </head>
+    <body>
+        <h1>SISTEMA DE CUENTAS POR COBRAR</h1>
+        <a href="index.html"><input type="button" id="btn1" value="Ingreso de Clientes"></a>
+        <a href="ingresos.html"><input type="button" id="btn2" value="Ingreso de Cuentas"></a>
+        <a href="cuentas.html"><input  type="button" id="btn3" value="Cuentas por Cobrar"></a>
+
+        <div id="contenido">
+        <br><br><br><br>
+          <form class="form-group">
+          <br>
+          <label >Nombres y Apellidos:  </label><br>
+          <input title="Se necesita un nombre" id="Nombre del Cliente" type="text" required onkeypress="return soloLetras(event)" ><br><br>
+          <label>Número de Cédula sin guion  </label><br>
+          <input title="Se necesita un numero de cedula" id="CedCliente" type="number" required onkeypress="return NumCheck(event)"><br><br>
+          <label id= 'Correo'>Correo electrónico:</label><br>
+          <input pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="CorreoEstu" type="email" ><br><br>
+          <label id= 'sexo'>Sexo:</label><br>
+          <select id="Selector"><option value="Masculino" >Masculino</option><option value="Femenino" >Femenino</option></select><br><br>
+          <label id= 'Fechanacimiento' >Edad  </label><br>
+          <input title="Ingrese su fecha de nacimiento" id="FNacimiento" type="number" onkeypress="return NumCheck(event)" required ><br><br>
+          <input type="button" id="e1" value='Enviar'>
+          <br>
+          <br>
+        </form>
+
+        <div id="visualizarTabla">
+            <table  style='width:100%' id="tabla" bgcolor="yellow">
+                <tr><td colspan="7"><h1>Lista de Clientes ingresados</h1></td></tr>
+                <tr>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Correo Electronico</th>
+                    <th>Edad</th>
+                    <th>Sexo</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </table>
+        </div>
+
+        </div>
+
+    </body>
+</html>

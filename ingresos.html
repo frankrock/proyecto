@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset='utf-8'>
+        <title>PROYECTO WEB</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="JS/jq.js"></script>
+        <script src="JS/validacion.js"></script>
+        <script src="JS/obtenerDatos.js"></script>
+        <script src="JS/asignaturas.js"></script>
+
+    </head>
+    <body>
+        <h1>SISTEMA DE CUENTAS POR COBRAR</h1>
+
+        <a href="index.html"><input type="button" id="btn1" value="Ingreso de Estudiantes"></a>
+        <a href="ingresos.html"><input type="button" id="btn2" value="Ingreso de Cuentas"></a>
+        <a href="cuentas.html"><input  type="button" id="btn3" value="Cuentas por Cobrar"></a>
+        <br><br><br><br><br><br><br><br>
+
+        <div id="contenido2">
+        <form id="ingresos">
+            <div class="form-group">
+                <br>
+                <label>Codigo</label><br>
+                <input type="text" id="Codigo" class="form-control">
+                <br><br>
+                <label>Nombre</label><br>
+                <input  type='text' id="Nombre" onkeypress="return soloLetras(event)" class="form-control">
+                <br><br>
+                <label>Número de Cuenta</label><br>
+                <input type="text" id="Numero_Cuenta" onkeypress="return NumCheck(event)" class="form-control" >
+                <br><br>
+            <input id="enviarIngreso" class="z1" type="button" value="Enviar">
+            </div>
+        </form>
+        <br><br><br><br>
+        </div>
+        
+        <div id="visualizarTabla">
+            <table  style='width:100%' id="tabla">
+                <tr><td colspan="5"><h1>Lista de Materias Ingresadas</h1></td></tr>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Número Credito</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+            </table>
+        </div>
+    </script>
+    </body>
+</html>

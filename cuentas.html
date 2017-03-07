@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+      <meta charset='utf-8'>
+        <title>PROYECTO WEB</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script src="JS/jq.js"></script>
+        <script src="JS/validacion.js"></script>
+        <script src="JS/obtenerDatos.js"></script>
+        <script src="JS/notas.js"></script>
+
+    </head>
+    <body>
+        <div id="contenidoNotas">
+            <h1>SISTEMA DE CUENTAS POR COBRAR</h1>
+            <a href="index.html"><input type="button" id="btn1" value="Ingreso de Estudiantes"></a>
+            <a href="ingresos.html"><input type="button" id="btn2" value="Ingreso de Cuentas"></a>
+            <a href="cuentas.html"><input  type="button" id="btn3" value="Cuentas por Cobrar"></a>
+            <br><br><br><br><br><br><br><br>
+            
+            <div id="formularioE"><form class="form-group">
+              <br>
+              <label >Nombres y Apellidos:  </label><br>
+              <input title="Se necesita un nombre" id="NEstudiante" type="text" disabled="true" ><br><br>
+              <label>Número de Céula sin guion  </label><br>
+              <input title="Se necesita un numero de cedula" id="CedCliente" type="number" disabled="true"><br><br>
+              <label id= 'Correo'>Correo electrónico:</label><br>
+              <input id="CorreoCliente" type="email" disabled="true"><br><br>
+              <label id= 'sexo'>Sexo:</label><br>
+              <input type="text" id="selectSexo" value="" disabled="true"><br><br>
+              <label id= 'Fechanacimiento' >Edad  </label><br>
+              <input id="Fnacimiento" type="number" disabled="true"><br><br>
+              <input type="button" id="ObtenerCliente" class="z1"  value='Elegir un Cliente'>
+              <br>
+              <br>
+            </form>
+            </div>
+            <div id="formularioM">
+            <form class="form-group">
+                    <br>
+                    <label>Codigo</label><br>
+                    <input type="text" id="Codigo"disabled="true">
+                    <br><br>
+                    <label>Nombre</label><br>
+                    <input  type='text' id="Nombre"disabled="true">
+                    <br><br>
+                    <label>Número de Cuenta</label><br>
+                    <input type="text" id="Numero_Cuenta"disabled="true">
+                    <br><br>
+                <input id="ObtenerCuenta" class="z1" type="button" value="Elegir Cuenta">
+            </form>
+            </div>
+            <div id="formularioN">
+            <form class="form-group">
+                    <br>
+                    <label>Primer Parcial</label><br>
+                    <input type="text" id="PParcial" type="number" required>
+                    <br><br>
+                    <label>Segundo Parcial</label><br>
+                    <input  type='text' id="SParcial" type="number" required ><br><br>
+                    <label>Sumatoria</label><br>
+                    <input  type='text' id="Sumatoria" type="number" disabled="true"><br><br>
+                    <label>Promedio</label><br>
+                    <input  type='text' id="Promedio" type="number" disabled="true"><br><br>
+                    <label>Recuperacion</label><br>
+                    <input  type='text' id="Recupera" type="number" disabled="true" ><br><br>
+                    <label>Sumatoria con recuperacion</label><br>
+                    <input  type='text' id="RecuSuma" type="number" disabled="true"><br><br>
+                    <label>Promedio con recuperacion</label><br>
+                    <input  type='text' id="RecuPro" type="number" disabled="true">
+                    <br><br>
+                    <label id="textoN"></label>
+                    <br><br>
+                <input id="EnviarNotas" class="z1" type="button" value="Subir Notas">
+            </form>
+            </div>
+            <br><br><br>
+            <div>
+                <table  style='width:100%' id="tablaNotas">
+                    <tr><td colspan="15"><h1>Lista de Cuentas por Cobrar</h1></td></tr>
+                    <tr>
+                        <th>Cedula</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Cuenta</th>
+                        <th>Credito</th>
+                        <th>Primer Parcial</th>
+                        <th>Segundo Parcial</th>
+                        <th>Sumatoria</th>
+                        <th>Promedio</th>
+                        <th>Recuperacion</th>
+                        <th>Sumatoria final</th>
+                        <th>Resultado final</th>
+                        <th>Estado</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="tablaEstu" class="mostrarTabla">
+            <div id="tablaE">
+
+            </div>
+            <br>
+            <label id="texto">De click en el digno "+" para seleccionar al estudiante</label>
+            <input id="CancelarEleccion" class="z2" type="button" value="Cancelar">
+        </div>
+        <div id="tablaMateria" class="mostrarTabla">
+            <div id="tablaM">
+            </div>
+            <br><br>
+            <label id="texto" >De click en el digno "+" para seleccionar la materia</label>
+            <input id="CancelarEleccion2" class="z2" type="button" value="Cancelar">
+        </div>
+
+    </body>
+</html>
